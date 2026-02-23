@@ -1,55 +1,198 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-    </head>
-    <body>
-        <header>
-            <section>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CV de Christopher, Ingeniero en IA y Fundador de CXC Store">
+    <title>CV Christopher | Ingeniero en IA</title>
+    <style>
+        body {
+            font-family: "Times New Roman", Times, serif;
+            background-color: #ffffff;
+            color: #111;
+            line-height: 1.5;
+            max-width: 850px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .profile-pic {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%; 
+            object-fit: cover;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+        }
+        h1 {
+            font-size: 28pt;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin: 10px 0 5px 0;
+        }
+        .subtitle {
+            font-size: 12pt;
+            margin-bottom: 20px;
+            font-style: italic;
+        }
+        nav {
+            border-top: 1px solid #000;
+            border-bottom: 1px solid #000;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+        .nav-list {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+        .nav-list li { display: inline; }
+        .nav-list a {
+            text-decoration: none;
+            color: #000;
+            font-size: 11pt;
+            text-transform: uppercase;
+            font-weight: bold;
+            position: relative;
+        }
+        .nav-list a:hover { text-decoration: underline; }
+        section { margin-bottom: 30px; }
+        h2 {
+            font-size: 16pt;
+            text-transform: uppercase;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+        }
+        .entry { margin-bottom: 20px; }
 
-            </section>
-            <nav>
+        .entry-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            width: 100%;
+        }
+        
+        .institution { font-weight: bold; font-size: 12pt; }
+        .location { font-size: 11pt; }
+        .role { font-style: italic; font-size: 12pt; }
+        .date { font-family: "Courier New", monospace; font-size: 10pt; }
+        
+        ul { margin-top: 5px; padding-left: 20px; }
+        li { margin-bottom: 5px; }
+        form { display: flex; flex-direction: column; gap: 15px; max-width: 600px; margin: 0 auto; }
+        input, textarea { padding: 10px; border: 1px solid #000; font-family: inherit; width: 100%; box-sizing: border-box; }
+        button { padding: 10px 30px; background-color: #000; color: #fff; border: 1px solid #000; text-transform: uppercase; cursor: pointer; font-weight: bold; }
+        button:hover { background-color: #333; }
 
-            </nav>
-        </header>
-        <main>
-            <section id="sobre-mi">
-                <h2>Acerca de mi</h2>
-                <p>
-                    Hola soy CXC y me gusta el popper
-                </p>
-            </section>
-            <section id="educacion">
-                <h2>Educaci&oacute;n</h2>
+        footer { text-align: center; font-size: 10pt; margin-top: 50px; color: #666; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="foto-perfil.jpeg" alt="Foto de perfil de Christopher" class="profile-pic">
+
+        <h1>Christopher Iván Sandoval Coxca</h1>
+        <div class="subtitle">
+            Ingeniero en Inteligencia Artificial (En formación) | ESCOM IPN
+        </div>
+
+        <nav>
+            <ul class="nav-list">
+                <li><a href="cxc-store.html">CXC Store</a></li>                
+                <li><a href="https://insaite.io" target="_blank">Insaite</a></li>
+                <li>|</li>
+                <li><a href="https://github.com/ChrisCoxca" target="_blank">GitHub</a></li>
+                <li><a href="https://www.linkedin.com/in/christopher-coxca-24a363331/" target="_blank">LinkedIn</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="sobre-mi">
+            <h2>Perfil Profesional</h2>
+            <p>
+                Estudiante de Ingeniería en Inteligencia Artificial en ESCOM-IPN con experiencia práctica como Trainee en Insaite. 
+                Combino habilidades técnicas en algoritmos y sistemas digitales con visión empresarial como fundador de CXC Store. 
+                Apasionado por los paradigmas de programación y el desarrollo de soluciones tecnológicas.
+            </p>
+        </section>
+
+        <section id="educacion">
+            <h2>Educación</h2>
+            <div class="entry">
+                <div class="entry-header">
+                    <span class="institution">Escuela Superior de Cómputo (ESCOM) - IPN</span>
+                    <span class="location">CDMX</span>
+                </div>
+                <div class="entry-header">
+                    <span class="role">Ingeniería en Inteligencia Artificial</span>
+                    <span class="date">2024 - 2028</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="experiencia">
+            <h2>Experiencia & Proyectos</h2>
+            <div class="entry">
+                <div class="entry-header">
+                    <span class="institution">Insaite</span>
+                    <span class="location">Remoto</span>
+                </div>
+                <div class="entry-header">
+                    <span class="role">Trainee AI</span>
+                    <span class="date">2025 - Presente</span>
+                </div>
                 <ul>
-                    <li>Escuela Superior de C&oacute;mputo</li>
-                    <p>Ingenier&iacute;a en Sistemas</p>
-                    <p>2024-2028</p>
+                    <li>Colaboración en proyectos de Inteligencia Artificial aplicada.</li>
+                    <li>Participación en equipos ágiles de desarrollo tecnológico.</li>
                 </ul>
-            </section>
-            <section id="experiencia">
-                <h2>Experincia: </h2>
-                <h3>Insaite</h3>
+            </div>
+
+            <div class="entry">
+                <div class="entry-header">
+                    <span class="institution">CXC Store</span>
+                    <span class="location">Naucalpan, Edo. Méx.</span>
+                </div>
+                <div class="entry-header">
+                    <span class="role">Fundador & Desarrollador</span>
+                    <span class="date">2024 - Presente</span>
+                </div>
                 <ul>
-                    <p>Trainee AI</p>
-                    <p>2025-2026</p>
+                    <li>Gestión de e-commerce de coleccionables y juguetes.</li>
+                    <li>Desarrollo de estrategias de venta y presencia digital.</li>
                 </ul>
-            </section>
-            <section id="contact-me">
-                <h2>Contacto</h2>
-                <p>Cont&acute;ctame:</p>
-                <form>
-                    <label for="nombre">Nombre: </label>
-                    <input type="text" id="name" name="nombre" placeholder="Escribe tu nombre" required/>
+            </div>
+        </section>
 
-                    <label for="correo">Correo: </label>
-                    <input type="email" id="correo" name="correo" placeholder="tu@example.com" required/>
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <form>
+                <label for="nombre">Nombre Completo:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required/>
 
-                    <label for="msj">Escribe tu mensaje: </label>
-                    <input type="text" id="msj" name="msj" rows="4" placeholder="Mensaje:" required></textarea>
+                <label for="correo">Correo Electrónico:</label>
+                <input type="email" id="correo" name="correo" placeholder="correo@ejemplo.com" required/>
 
-                    <button type="submit">Enviar</button>
-                </form>
-            </section>
-        </main>
-    </body>
+                <label for="msj">Mensaje:</label>
+                <textarea id="msj" name="msj" rows="4" placeholder="Escribe tu mensaje..." required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Christopher - Todos los derechos reservados.</p>
+    </footer>
+
+</body>
 </html>
